@@ -41,11 +41,11 @@ Function Alternative_Capital_Letters()
 End Function
 
 Result of above code is :- B
-		         h
-	                           A
-		         g
-		         Y
-		         o
- 		         D
-		         a
- 		         Y
+		           h
+	                   A
+		           g
+		           Y
+		           o
+ 		           D
+		           a
+ 		           Y
