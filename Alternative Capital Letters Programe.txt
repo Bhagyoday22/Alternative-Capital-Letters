@@ -1,0 +1,51 @@
+Question :- Write a Programe to print alternative capital letters.
+	e.g:- If User type his name " Bhagyoday " (in any type  capital, small or capitalize) the result shows like this " BhAgYoDaY "
+
+Answer :-
+
+Function Alternative_Capital_Letters()
+    
+    ' Here First we have to declare the variable to store the input from the user
+
+    Dim Name As String
+
+    ' Take the inputbox to enter the name or to take the name from user
+    
+    Name = InputBox("Enter Your Name", "Name Window")
+
+    ' To find the length of the name declare the variable & store the length in that variable
+ 
+    Name_length = Len(Name)
+
+    ' Use the for loop to find the alternative letters from given data or name which is type by the user
+    
+    For i = 1 To Name_length Step 2
+
+      ' To display the letters in capital letters from the given data or name use the ucase function
+      
+      a = UCase(Mid(Name, i, 1))
+      
+      ' To display or to show  the alternative letters in capitals use message box
+
+      MsgBox a
+
+      ' To display the letters in small letters from the given data or name use the lcase function
+      
+      b = LCase(Left(Mid(Name, i + 1, i), 2 - 1))
+
+      ' To display or to show  the alternative letters in small use message box
+      MsgBox b
+     
+     Next
+     
+End Function
+
+Result of above code is :- B
+		         h
+	                           A
+		         g
+		         Y
+		         o
+ 		         D
+		         a
+ 		         Y
